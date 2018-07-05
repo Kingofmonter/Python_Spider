@@ -17,7 +17,7 @@ class Crack():
     def __init__(self,username,password):
 
         self.url="https://passport.bilibili.com/login"                                                              #网址
-        self.brower=webdriver.Chrome(r"C:\Users\Administrator\Downloads\chromedriver_win32\chromedriver.exe")   #浏览器驱动所在位置
+        self.brower=webdriver.Chrome(r"C:\Users\Administrator\Downloads\chromedriver_win32\chromedriver.exe")   #本地浏览器驱动所在位置
         self.wait=WebDriverWait(self.brower,100)
         self.username=username
         self.password=password
@@ -296,5 +296,5 @@ class Crack():
 
 if __name__=='__main__':
     print("start")
-    crack=Crack('15158765640','jin630061126')                                                                          #输入用户名密码
+    crack=Crack('用户名','密码')                                                                          #输入用户名密码
     crack.crack()
